@@ -18,9 +18,9 @@ public class thue {
         // TODO code application logic here
         Scanner sc = new Scanner(System.in);
         final int Single = 1;
-        final int MarriedFilingJointly = 2;
-        final int MarriedFilingSeparately = 3;
-        final int HeafOfHoldhouse = 4;
+            final int MarriedFilingJointly = 2;
+            final int MarriedFilingSeparately = 3;
+            final int HeafOfHoldhouse = 4;
         
         
         double tax = 0.0;

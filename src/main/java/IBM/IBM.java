@@ -18,26 +18,28 @@ public class IBM {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
         double height, weight;
-        double BMI;
+        double bmi;
         //Nhap
         System.out.println("Nhap chieu cao");
         height = input.nextDouble();
         System.out.println("Nhap can nang");
         weight = input.nextDouble();
         //Tinh
-        height = height*2;
-        BMI = weight / height;
         
-        System.out.println("Chi so BMI la: "+BMI);
-        if(BMI < 18.5){
+        height = height /100 ;
+        height = height*height;
+        bmi = weight / height;
+        
+        System.out.println("Chi so BMI la: "+bmi);
+        if(bmi < 18.5){
             System.out.println("Underweight");
         }
         else{
-            if(BMI >= 18.5 && BMI < 25){
+            if(bmi >= 18.5 && bmi < 25){
                 System.out.println("Normal");
             }
             else{
-                if(BMI >=25 && BMI <=30){
+                if(bmi >=25 && bmi <=30){
                     System.out.println("Overweight");
                 }    
                 else{
